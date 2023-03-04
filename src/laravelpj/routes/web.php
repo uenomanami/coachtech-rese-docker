@@ -91,14 +91,4 @@ Route::get('/thanks', function () {
 
 Route::get('/reserve/qrcode', [QrCodeReserveController::class, 'index'])->name('reserve.qrcode');
 
-
-Route::get('/emailtest', function () {
-    Mail::to('test@example.com')->send(new Test);
-    return 'メール送信しました！';
-});
-
-Route::get('/test', function () {
-    return 'テスト画面表示';
-});
-
 require __DIR__ . '/auth.php';
