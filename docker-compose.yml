@@ -1,0 +1,39 @@
+version: "3"
+
+services:
+  app:
+    ports:
+      - "8000:80"
+    build: ./docker/app
+    container_name: laravel_app
+    volumes:
+      - ./src:/var/www/html:delegated
+    depends_on:
+      - db
+      - mailhog
+
+  db:
+    image: mysql:8.0.31
+    container_name: laravel_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: laravel_db
+    ports:
+      - 3306:3306
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.2.0
+    environment:
+      PMA_ARBITRARY: 1
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - 8081:80
+
+  mailhog:
+    container_name: mailhog
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
+      - "1025:1025"

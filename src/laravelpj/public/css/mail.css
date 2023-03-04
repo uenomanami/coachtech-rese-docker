@@ -1,0 +1,35 @@
+.mail__main {
+  width: 100%;
+  padding: 20px 80px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.mail__main label {
+  display: block;
+  margin: 10px 0;
+}
+
+.mail__main select {
+  width: 200px;
+  padding: 10px;
+  display: block;
+  border-radius: 3px;
+}
+
+.mail__main textarea {
+  width: 90%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.mail__main button{
+  background-color: rgb(53, 96, 246);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 15px;
+  cursor: pointer;
+  display: block;
+}

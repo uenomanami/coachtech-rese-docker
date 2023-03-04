@@ -1,0 +1,49 @@
+.admin {
+  width: 40%;
+  padding: 30px 80px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.admin__title {
+  font-size: 24px;
+}
+
+.admin table{
+  width: 100%;
+  margin-top: 50px;
+} 
+
+.admin table th,td {
+  padding: 5px;
+}
+
+.admin table td {
+  width: 60%;
+}
+
+.admin input{
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.admin button {
+  display: block;
+  background-color: rgb(53, 96, 246);
+  color: white;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 20px auto 0;
+}
+
+.validation__error-red {
+  color: rgb(241, 60, 60);
+  font-weight: bold;
+  text-align: left;
+}

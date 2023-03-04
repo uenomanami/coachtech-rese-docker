@@ -1,0 +1,197 @@
+.storemanager__main {
+  padding: 20px 80px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.storemanager__create-image {
+  width: 40%;
+  margin: 15px 0;
+  vertical-align: top;
+}
+
+.storemanager__create-item {
+  text-align: left;
+}
+
+.storemanager__create-item select,
+input {
+  display: block;
+  width: 250px;
+  height: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 3px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.storemanager__create-description {
+  width: 100%;
+  margin-top: 15px;
+  line-height: 25px;
+  border: none;
+  border-radius: 3px;
+}
+
+.storemanager__create-item button {
+  width: 100%;
+  background-color: rgb(53, 96, 246);
+  color: white;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  padding: 6px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.validation__error-red {
+  color: rgb(241, 60, 60);
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.storemanager__main h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.storemanager__reserve,
+.storemanager__info {
+  margin: 20px auto 0;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.storemanager__info {
+  width: 300px;
+  margin-right: 30px;
+}
+
+.storemanager__reserve {
+  width: 500px;
+}
+
+.storemanager__main h2 {
+  font-size: 18px;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.storemanager__info-img {
+  width: 300px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  padding-top: 15px;
+}
+
+.storemanager__info-img img {
+  width: 300px;
+  object-fit: contain;
+  min-width: 300px;
+  display: inline-block;
+}
+
+.storemanager__info-item {
+  min-width: 300px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.storemanager__info-item p {
+  padding: 15px 0 0;
+  text-align: left;
+  font-size: 14px;
+}
+
+.storemanager__info-description {
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.storemanager__info-item button {
+  width: 100%;
+  background-color: rgb(53, 96, 246);
+  color: white;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  padding: 6px 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+/*予約一覧*/
+.storemanager__reserve table {
+  width: 100%;
+  margin-top: 18px;
+  background-color: #fff;
+  border-radius: 5px;
+  border-collapse: separate;
+}
+
+.storemanager__reserve table th,
+td {
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.storemanager__reserve table th {
+  background-color: rgb(53, 96, 246);
+  color: #fff;
+}
+
+.storemanager__reserve table th:first-child {
+  border-radius: 5px 0 0 0;
+}
+
+.storemanager__reserve table th:nth-of-type(5) {
+  border-radius: 0 5px 0 0;
+}
+
+.storemanager__reserve table td:last-child {
+  text-align: center;
+}
+
+.storemanager__reserve button {
+  background-color: rgb(53, 96, 246);
+  color: white;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .storemanager__main {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .storemanager__main h1 {
+    text-align: left;
+  }
+
+  .storemanager__info {
+    margin-right: 0;
+  }
+
+  .storemanager__reserve table th,
+  td {
+    padding: 8px;
+  }
+
+  .storemanager__reserve {
+    max-width: 450px;
+    width: 100%;
+  }
+}

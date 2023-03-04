@@ -1,0 +1,17 @@
+.reserve__detail table{
+  width: 400px;
+  margin: 100px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
+.reserve__detail th {
+  padding: 10px;
+  border-right: 1px solid black;
+}
+
+.reserve__detail td {
+  padding: 10px 20px;
+}
